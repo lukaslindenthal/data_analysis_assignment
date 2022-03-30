@@ -3,8 +3,8 @@
 # Matr. nr,: 2289298
 # date: 27.03.2022
 
-#set working directory (adapt as needed)
-setwd("C:\\Users\\anon\\Documents\\R\\RdataAnalysisWS21\\data_final_assignment")
+#set working directory (please adapt to individual directory)
+setwd("C:\\)
 
 # install packages (if needed)
 # install.packages("dplyr") #needed for PCA
@@ -708,7 +708,7 @@ addnortharrow("topright",
               padin = c(0.55, 0.15), scale = 0.5,
               lwd = 0.5, border = "black", cols = c("white", "black"),
               text.col = "black")
-addscalebar(#model = "WGS84", #auto assuming lat/lon (epsg4326 = Gauﬂ-Kr¸ger)
+addscalebar(#model = "WGS84", #auto assuming lat/lon (epsg4326 = Gau√ü-Kr√ºger)
   # dist = 10,
   # st.size = 1,
   # dist_unit = "km",
@@ -738,7 +738,7 @@ addnortharrow("topright",
               padin = c(0.55, 0.15), scale = 0.5,
               lwd = 0.5, border = "black", cols = c("white", "black"),
               text.col = "black")
-addscalebar(#model = "WGS84", #auto assuming lat/lon (epsg4326 = Gauﬂ-Kr¸ger)
+addscalebar(#model = "WGS84", #auto assuming lat/lon (epsg4326 = Gau√ü-Kr√ºger)
   # dist = 10,
   # st.size = 1,
   # dist_unit = "km",
@@ -767,7 +767,7 @@ addnortharrow("topright",
               padin = c(0.55, 0.15), scale = 0.5,
               lwd = 0.5, border = "black", cols = c("white", "black"),
               text.col = "black")
-addscalebar(#model = "WGS84", #auto assuming lat/lon (epsg4326 = Gauﬂ-Kr¸ger)
+addscalebar(#model = "WGS84", #auto assuming lat/lon (epsg4326 = Gau√ü-Kr√ºger)
   # dist = 10,
   # st.size = 1,
   # dist_unit = "km",
@@ -796,7 +796,7 @@ addnortharrow("topright",
               padin = c(0.55, 0.15), scale = 0.5,
               lwd = 0.5, border = "black", cols = c("white", "black"),
               text.col = "black")
-addscalebar(#model = "WGS84", #auto assuming lat/lon (epsg4326 = Gauﬂ-Kr¸ger)
+addscalebar(#model = "WGS84", #auto assuming lat/lon (epsg4326 = Gau√ü-Kr√ºger)
   # dist = 10,
   # st.size = 1,
   # dist_unit = "km",
@@ -827,7 +827,7 @@ addnortharrow("topright",
               padin = c(0.55, 0.15), scale = 0.5,
               lwd = 0.5, border = "black", cols = c("white", "black"),
               text.col = "black")
-addscalebar(#model = "WGS84", #auto assuming lat/lon (epsg4326 = Gauﬂ-Kr¸ger)
+addscalebar(#model = "WGS84", #auto assuming lat/lon (epsg4326 = Gau√ü-Kr√ºger)
   # dist = 10,
   # st.size = 1,
   # dist_unit = "km",
@@ -858,7 +858,7 @@ addnortharrow("topright",
               padin = c(0.55, 0.15), scale = 0.5,
               lwd = 0.5, border = "black", cols = c("white", "black"),
               text.col = "black")
-addscalebar(#model = "WGS84", #auto assuming lat/lon (epsg4326 = Gauﬂ-Kr¸ger)
+addscalebar(#model = "WGS84", #auto assuming lat/lon (epsg4326 = Gau√ü-Kr√ºger)
   # dist = 10,
   # st.size = 1,
   # dist_unit = "km",
@@ -887,7 +887,7 @@ addnortharrow("topright",
               padin = c(0.55, 0.15), scale = 0.5,
               lwd = 0.5, border = "black", cols = c("white", "black"),
               text.col = "black")
-addscalebar(#model = "WGS84", #auto assuming lat/lon (epsg4326 = Gauﬂ-Kr¸ger)
+addscalebar(#model = "WGS84", #auto assuming lat/lon (epsg4326 = Gau√ü-Kr√ºger)
   # dist = 10,
   # st.size = 1,
   # dist_unit = "km",
@@ -945,7 +945,7 @@ pcqm <- function(dat) {
   
   # Basal area of each tree
   dbh <- mapply('[', dat, TRUE, 3)
-  # c2/4œÄ
+  # c2/4√è¬Ä
   ba <- as.numeric(dbh) ^ 2 / 4 * pi
   mba <- aggregate(ba, by = list(as.factor(species)), FUN = mean)
   mban <- as.numeric(mba[, 2])
@@ -1019,7 +1019,7 @@ addnortharrow("topright",
               lwd = 0.5, border = "black", cols = c("white", "black"),
               text.col = "black"
 )
-addscalebar(#model = "WGS84", #auto assuming lat/lon (epsg4326 = Gauﬂ-Kr¸ger)
+addscalebar(#model = "WGS84", #auto assuming lat/lon (epsg4326 = Gau√ü-Kr√ºger)
   # dist = 10,
   # st.size = 1,
   # dist_unit = "km",
@@ -1078,7 +1078,6 @@ df.Grm_all <- cbind(df.Grm_all, df.Grm_S) #bind the df together. Create a table 
 
 
 # ADD ON: map of study area -----------------------------------------------
-
 
 # DEM_raster <- aggregate(DEM_raster, fact=2) ##check dimensions and if running slow resample to 1/2 resolution
 #plot for DEM_raster
