@@ -1,7 +1,7 @@
 # # Script final assigment "Exercise Bruchsal"
 # Author: Lukas Lindenthal 
 # Matr. nr,: 2289298
-# date: 27.03.2022
+# date: 30.03.2022
 
 #set working directory (please adapt to individual directory)
 setwd("C:\\)
