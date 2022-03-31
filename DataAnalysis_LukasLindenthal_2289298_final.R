@@ -89,13 +89,13 @@ stressplot(NMDS1)
 
 
 #plot the NMDS results
-col.ord <- ip_species_cover$flat  #define color as two classes
+col.ord <- ip$flat  #define color as two classes
 # # Define a group variable (first 53 samples belong to group 1, last 10 samples to group 2)
 # group <-  c(rep("Group1", 53), rep("Group2", 11))
 # # Create a vector of color values with same length as the vector of group values
 # colors <-  c(rep("treat1", 53), rep("treat2", 11))
 
-pdf("graphics/A4_ordination/NMDS_speciescover.pdf")
+#pdf("graphics/A4_ordination/NMDS_speciescover.pdf")
 
 # plot(NMDS1, type = "n",
 #      col = col.ord,
@@ -186,7 +186,7 @@ Ell_F.resc <- rescale(Ell_F$means)
 
 log.Ell_F.resc <- rescale(Ell_F$means)
 
-pdf("graphics/A7_EllenbergANDgrime_plots/Ordination_Ellenberg-moisture-indicator.pdf")
+#pdf("graphics/A7_EllenbergANDgrime_plots/Ordination_Ellenberg-moisture-indicator.pdf")
 
 plot(NMDS1, type = "n",
      axes = F,
@@ -216,7 +216,7 @@ dev.off()
 
 Ell_N.resc <- rescale(Ell_N$means)
 
-pdf("graphics/A7_EllenbergANDgrime_plots/Ordination_Ellenberg-Nitrogen-indicator.pdf")
+#pdf("graphics/A7_EllenbergANDgrime_plots/Ordination_Ellenberg-Nitrogen-indicator.pdf")
 
 plot(NMDS1, type = "n",
      axes = F,
@@ -246,7 +246,7 @@ dev.off()
 
 Ell_R.resc <- rescale(Ell_R$means)  
 
-pdf("graphics/A7_EllenbergANDgrime_plots/Ordination_Ellenberg-soilreaction-indicator.pdf")
+#pdf("graphics/A7_EllenbergANDgrime_plots/Ordination_Ellenberg-soilreaction-indicator.pdf")
 
 plot(NMDS1, type = "n",
      axes = F,
@@ -276,7 +276,7 @@ dev.off()
 
 Grm_C.resc <- rescale(Grm_C$means)  
 
-pdf("graphics/A7_EllenbergANDgrime_plots/Ordination_Grime_C_strategie.pdf")
+#pdf("graphics/A7_EllenbergANDgrime_plots/Ordination_Grime_C_strategie.pdf")
 
 plot(NMDS1, type = "n",
      axes = F,
@@ -306,7 +306,7 @@ dev.off()
 
 Grm_S.resc <- rescale(Grm_S$means)  
 
-pdf("graphics/A7_EllenbergANDgrime_plots/Ordination_Grime_S_strategie.pdf")
+#pdf("graphics/A7_EllenbergANDgrime_plots/Ordination_Grime_S_strategie.pdf")
 
 plot(NMDS1, type = "n",
      axes = F,
@@ -336,7 +336,7 @@ dev.off()
 
 Grm_R.resc <- rescale(Grm_R$means)  
 
-pdf("graphics/A7_EllenbergANDgrime_plots/Ordination_Grime_R_strategie.pdf")
+#pdf("graphics/A7_EllenbergANDgrime_plots/Ordination_Grime_R_strategie.pdf")
 
 plot(NMDS1, type = "n",
      axes = F,
@@ -367,7 +367,7 @@ dev.off()
 ###
 # now let's plot the result for header: living plants
 lp.header <- rescale(header$Lebende_Pflanzen)
-pdf("graphics/A8_headdata/Ordination_livingplants.pdf")
+#pdf("graphics/A8_headdata/Ordination_livingplants.pdf")
 
 plot(NMDS1, type = "n",
      main = paste("Ordination [2D]", "\n", "living plants scaled"),
@@ -392,7 +392,7 @@ dev.off()
 ###
 # and now for header: bare ground
 bg.header <- rescale(header$Offener_Untergrund)
-pdf("graphics/A8_headdata/Ordination_bareground.pdf")
+#pdf("graphics/A8_headdata/Ordination_bareground.pdf")
 
 plot(NMDS1, type = "n",
      main = paste("Ordination [2D]", "\n", "scaled by bare ground"),
@@ -420,7 +420,7 @@ dev.off()
 ###
 # and now for header: litter
 lit.header <- rescale(header$Streu)
-pdf("graphics/A8_headdata/Ordination_litter.pdf")
+#pdf("graphics/A8_headdata/Ordination_litter.pdf")
 
 plot(NMDS1, type = "n",
      main = paste("Ordination [2D]", "\n", "scaled by litter"),
@@ -446,7 +446,7 @@ dev.off()
 ###
 # and now for header: deadwood
 dw.header <- rescale(header$Totholz_liegend)
-pdf("graphics/A8_headdata/Ordination_deadwood.pdf")
+#pdf("graphics/A8_headdata/Ordination_deadwood.pdf")
 
 plot(NMDS1, type = "n",
      main = paste("Ordination [2D]", "\n", "scaled by litter"),
@@ -472,7 +472,7 @@ dev.off()
 ###
 # and now for header: tree cover
 covtree.header <- rescale(header$Cover_Trees)
-pdf("graphics/A8_headdata/Ordination_treecover.pdf")
+#pdf("graphics/A8_headdata/Ordination_treecover.pdf")
 
 plot(NMDS1, type = "n",
      main = paste("Ordination [2D]", "\n", "scaled by tree cover"),
@@ -498,7 +498,7 @@ dev.off()
 ###
 # and now for header: shrubs cover
 covshrub.header <- rescale(header$Cover_Shrubs)
-pdf("graphics/A8_headdata/Ordination_shrubcover.pdf")
+#pdf("graphics/A8_headdata/Ordination_shrubcover.pdf")
 
 plot(NMDS1, type = "n",
      main = paste("Ordination [2D]", "\n", "scaled by shrub cover"),
@@ -524,7 +524,7 @@ dev.off()
 ###
 # and now for header: vascular plants
 vascplant.header <- rescale(header$Cover_Field_Layer_vascular)
-pdf("graphics/A8_headdata/Ordination_vascular.pdf")
+#pdf("graphics/A8_headdata/Ordination_vascular.pdf")
 
 plot(NMDS1, type = "n",
      main = paste("Ordination [2D]", "\n", "scaled by vascular plants"),
@@ -550,7 +550,7 @@ dev.off()
 ###
 # and now for header: NON vascular plants
 NONvascplant.header <- rescale(header$Cover_Field_Layer_non_vascular)
-pdf("graphics/A8_headdata/Ordination_nonvascular.pdf")
+#pdf("graphics/A8_headdata/Ordination_nonvascular.pdf")
 
 plot(NMDS1, type = "n",
      main = paste("Ordination [2D]", "\n", "scaled by non vascular plants"),
@@ -581,7 +581,7 @@ sl.header2 <- rescale(header$Hangneigung)
 
 Ex.radians <- ((header$Exposition/360)*2*pi)
 
-pdf("graphics/A8_headdata/Ordination_exposition.pdf")
+#pdf("graphics/A8_headdata/Ordination_exposition.pdf")
 
 plot(NMDS1, type = "n",
      main = paste("Ordination [2D]", "\n", "scaled by exposition"),
@@ -629,7 +629,7 @@ DEM_slope <- raster("SPATIAL/slope.tif")
 #plot for DEM_raster
 df.DEM_raster <- as.data.frame(DEM_raster, xy = TRUE)
 
-pdf("graphics/A9_DEM_headdata/terrain_exposition.pdf")
+#pdf("graphics/A9_DEM_headdata/terrain_exposition.pdf")
 
 ggplot()+
   geom_tile(data = df.DEM_raster, aes(x=x, y=y, fill = dem))+ # add the provided data as fill
@@ -646,7 +646,7 @@ dev.off()
 slp <-  terrain(DEM_slope, opt = "slope", unit = "degrees")
 df.DEM_slope <- as.data.frame(slp, xy = TRUE)
 
-pdf("graphics/A9_DEM_headdata/terrain_slope.pdf")
+#pdf("graphics/A9_DEM_headdata/terrain_slope.pdf")
 
 ggplot()+
   geom_tile(data = df.DEM_slope, aes(x=x, y=y, fill = slope))+ # same procedure for slope
@@ -662,7 +662,7 @@ dev.off()
 asp <- terrain(DEM_aspect, opt = "aspect", unit = "degrees")
 df.DEM_aspect <- as.data.frame(asp, xy = TRUE)
 
-pdf("graphics/A9_DEM_headdata/terrain_aspect.pdf")
+#pdf("graphics/A9_DEM_headdata/terrain_aspect.pdf")
 
 ggplot()+
   geom_tile(data = df.DEM_aspect, aes(x=x, y=y, fill = aspect))+# as well as aspect
@@ -676,7 +676,7 @@ dev.off()
 
 ###
 # DEM with gray.colors and living plants
-pdf("graphics/A9_DEM_headdata/DEM_ordination_livingplants.pdf")
+#pdf("graphics/A9_DEM_headdata/DEM_ordination_livingplants.pdf")
 
 # plot(DEM_raster,  
 #      col = gray.colors(20), legend = FALSE,
@@ -707,7 +707,7 @@ dev.off()
 
 ###
 # DEM with gray.colors and dead wood
-pdf("graphics/A9_DEM_headdata/DEM_ordination_deadwood.pdf")
+#pdf("graphics/A9_DEM_headdata/DEM_ordination_deadwood.pdf")
 
 # plot(DEM_raster,  
 #      col = gray.colors(20), legend = FALSE,
@@ -738,7 +738,7 @@ dev.off()
 
 ###
 # DEM with gray.colors and litter
-pdf("graphics/A9_DEM_headdata/DEM_ordination_litter.pdf")
+#pdf("graphics/A9_DEM_headdata/DEM_ordination_litter.pdf")
 # plot(DEM_raster,
 #      col = gray.colors(20), legend = FALSE,
 #      # ylim = c(49.095, 49.110), xlim = c(8.565, 8.590)
@@ -769,7 +769,7 @@ dev.off()
 
 ###
 # DEM with gray.colors and bare ground
-pdf("graphics/A9_DEM_headdata/DEM_ordination_bareground.pdf")
+#pdf("graphics/A9_DEM_headdata/DEM_ordination_bareground.pdf")
 # plot(DEM_raster,  
 #      col = gray.colors(20), legend = FALSE,
 #      # ylim = c(49.095, 49.110), xlim = c(8.565, 8.590)
@@ -800,7 +800,7 @@ dev.off()
 
 ###
 # DEM with gray.colors and tree cover
-pdf("graphics/A9_DEM_headdata/DEM_ordination_treecover.pdf")
+#pdf("graphics/A9_DEM_headdata/DEM_ordination_treecover.pdf")
 
 # plot(DEM_raster,  
 #      col = gray.colors(20), legend = FALSE,
@@ -832,7 +832,7 @@ dev.off()
 
 ###
 # DEM with gray.colors and shrub cover
-pdf("graphics/A9_DEM_headdata/DEM_ordination_shrubcover.pdf")
+#pdf("graphics/A9_DEM_headdata/DEM_ordination_shrubcover.pdf")
 
 # plot(DEM_raster,  
 #      col = gray.colors(20), legend = FALSE,
@@ -863,7 +863,7 @@ dev.off()
 
 
 ## # DEM with gray.colors and non vascular plants
-pdf("graphics/A9_DEM_headdata/DEM_ordination_nonvascular.pdf")
+#pdf("graphics/A9_DEM_headdata/DEM_ordination_nonvascular.pdf")
 # plot(DEM_raster,
 #      col = gray.colors(20), legend = FALSE,
 #      # ylim = c(49.095, 49.110), xlim = c(8.565, 8.590)
@@ -993,7 +993,7 @@ pcqm_dat <- pcqm(dat)
 
 ### plotting of the pcqm data 
 ## # DEM with gray.colors, pcqm and living plants
-pdf("graphics/A11_PCQM//PCQM_ordination_livingplants.pdf")
+#pdf("graphics/A11_PCQM//PCQM_ordination_livingplants.pdf")
 # plot(DEM_raster,
 #      col = gray.colors(20), legend = FALSE,
 #      # ylim = c(49.095, 49.110), xlim = c(8.565, 8.590)
@@ -1026,7 +1026,7 @@ dev.off()
 
 ###
 # DEM with gray.colors, pcqm and bare ground
-pdf("graphics/A11_PCQM//PCQM_ordination_bareground.pdf")
+#pdf("graphics/A11_PCQM//PCQM_ordination_bareground.pdf")
 # plot(DEM_raster,
 #      col = gray.colors(20), legend = FALSE,
 #      # ylim = c(49.095, 49.110), xlim = c(8.565, 8.590)
@@ -1059,7 +1059,7 @@ dev.off()
 
 ###
 # DEM with gray.colors, pcqm and litter
-pdf("graphics/A11_PCQM//PCQM_ordination_litter.pdf")
+#pdf("graphics/A11_PCQM//PCQM_ordination_litter.pdf")
 # plot(DEM_raster,
 #      col = gray.colors(20), legend = FALSE,
 #      # ylim = c(49.095, 49.110), xlim = c(8.565, 8.590)
@@ -1093,7 +1093,7 @@ dev.off()
 
 ###
 # DEM with gray.colors, pcqm and dead wood
-pdf("graphics/A11_PCQM//PCQM_ordination_deadwood.pdf")
+#pdf("graphics/A11_PCQM//PCQM_ordination_deadwood.pdf")
 # plot(DEM_raster,
 #      col = gray.colors(20), legend = FALSE,
 #      # ylim = c(49.095, 49.110), xlim = c(8.565, 8.590)
@@ -1127,7 +1127,7 @@ dev.off()
 
 ###
 # DEM with gray.colors, pcqm and tree cover
-pdf("graphics/A11_PCQM//PCQM_ordination_treecover.pdf")
+#pdf("graphics/A11_PCQM//PCQM_ordination_treecover.pdf")
 # plot(DEM_raster,
 #      col = gray.colors(20), legend = FALSE,
 #      # ylim = c(49.095, 49.110), xlim = c(8.565, 8.590)
@@ -1161,7 +1161,7 @@ dev.off()
 
 ###
 # DEM with gray.colors, pcqm and shrub cover
-pdf("graphics/A11_PCQM//PCQM_ordination_shrubcover.pdf")
+#pdf("graphics/A11_PCQM//PCQM_ordination_shrubcover.pdf")
 # plot(DEM_raster,
 #      col = gray.colors(20), legend = FALSE,
 #      # ylim = c(49.095, 49.110), xlim = c(8.565, 8.590)
@@ -1195,7 +1195,7 @@ dev.off()
 
 ###
 # DEM with gray.colors, pcqm and vascular plants
-pdf("graphics/A11_PCQM//PCQM_ordination_vascular.pdf")
+#pdf("graphics/A11_PCQM//PCQM_ordination_vascular.pdf")
 # plot(DEM_raster,
 #      col = gray.colors(20), legend = FALSE,
 #      # ylim = c(49.095, 49.110), xlim = c(8.565, 8.590)
@@ -1242,7 +1242,7 @@ MaxEnt_Gal_odoratum <- data.frame(Gal_odoratum$species, header$x , header$y)
 MaxEnt_Gal_odoratum[MaxEnt_Gal_odoratum == 0] <- NA
 MaxEnt_Gal_odoratum <- na.omit(MaxEnt_Gal_odoratum)
 MaxEnt_Gal_odoratum$Gal_odoratum.species <- "Galium odoratum"
-write.csv(MaxEnt_Gal_odoratum,"C:/Dokumente und Einstellungen/anon/Documents/R/RdataAnalysisWS21/MaxEnt in R/Galiumodoratum/Galiumodoratum.csv", row.names = FALSE)
+#write.csv(MaxEnt_Gal_odoratum,"C:/Dokumente und Einstellungen/anon/Documents/R/RdataAnalysisWS21/MaxEnt in R/Galiumodoratum/Galiumodoratum.csv", row.names = FALSE)
 
 
 ###
@@ -1257,7 +1257,7 @@ MaxEnt_Querc_pet <- data.frame(Querc_pet$species, header$x , header$y)
 MaxEnt_Querc_pet[MaxEnt_Querc_pet == 0] <- NA
 MaxEnt_Querc_pet <- na.omit(MaxEnt_Querc_pet)
 MaxEnt_Querc_pet$Querc_pet.species <- "Querc_petraea"
-write.csv(MaxEnt_Querc_pet,"C:/Dokumente und Einstellungen/anon/Documents/R/RdataAnalysisWS21/MaxEnt in R/Quercuspetraea/Quercuspetraea.csv", row.names = FALSE)
+#write.csv(MaxEnt_Querc_pet,"C:/Dokumente und Einstellungen/anon/Documents/R/RdataAnalysisWS21/MaxEnt in R/Quercuspetraea/Quercuspetraea.csv", row.names = FALSE)
 
 
 
@@ -1267,7 +1267,7 @@ write.csv(MaxEnt_Querc_pet,"C:/Dokumente und Einstellungen/anon/Documents/R/Rdat
 
 ###
 # DEM with gray.colors, pcqm and non vascular plants
-pdf("graphics/A11_PCQM//PCQM_ordination_nonvascular.pdf")
+#pdf("graphics/A11_PCQM//PCQM_ordination_nonvascular.pdf")
 # plot(DEM_raster,
 #      col = gray.colors(20), legend = FALSE,
 #      # ylim = c(49.095, 49.110), xlim = c(8.565, 8.590)
